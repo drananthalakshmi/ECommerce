@@ -34,6 +34,57 @@
 			<figcaption class="info-wrap">
 				<a href="{{product.get_url}}" class="title">{{product.product_name}}</a>
 				<div class="price mt-1">{{product.price}}</div> <!-- price-wrap.// -->
+				<div class="rating-star">
+					<span>
+					<span>
+						{% if product.averageReview < 0.5 %}
+							<i class="fa fa-star-0" style="font-size:12px;color: #ffb503"></i>
+						{% elif product.averageReview >= 0.5 and product.averageReview < 1%}
+							<i class="fa fa-star-half-o" style="font-size:12px;color: #ffb503"></i>
+						{% else %}
+							<i class="fa fa-star" style="font-size:12px;color: #ffb503"></i>
+						{% endif %}
+					</span>
+					<span>
+						{% if product.averageReview < 1.5 %}
+							<i class="fa fa-star-0" style="font-size:12px;color: #ffb503"></i>
+						{% elif product.averageReview >= 1.5 and product.averageReview < 2%}
+							<i class="fa fa-star-half-o" style="font-size:12px;color: #ffb503"></i>
+						{% else %}
+							<i class="fa fa-star" style="font-size:12px;color: #ffb503"></i>
+						{% endif %}
+					</span>
+					<span>
+						{% if product.averageReview < 2.5 %}
+							<i class="fa fa-star-0" style="font-size:12px;color: #ffb503"></i>
+						{% elif product.averageReview >= 2.5 and product.averageReview < 3%}
+							<i class="fa fa-star-half-o" style="font-size:12px;color: #ffb503"></i>
+						{% else %}
+							<i class="fa fa-star" style="font-size:12px;color: #ffb503"></i>
+						{% endif %}
+					</span>
+					<span>
+						{% if product.averageReview < 3.5 %}
+							<i class="fa fa-star-0" style="font-size:12px;color: #ffb503"></i>
+						{% elif product.averageReview >= 3.5 and product.averageReview < 4 %}
+							<i class="fa fa-star-half-o" style="font-size:12px;color: #ffb503"></i>
+						{% else %}
+							<i class="fa fa-star" style="font-size:12px;color: #ffb503"></i>
+						{% endif %}
+					</span>
+					<span>
+						{% if product.averageReview < 4.5 %}
+							<i class="fa fa-star-0" style="font-size:12px;color: #ffb503"></i>
+						{% elif product.averageReview >= 4.5 and product.averageReview < 5 %}
+							<i class="fa fa-star-half-o" style="font-size:12px;color: #ffb503"></i>
+						{% else %}
+							<i class="fa fa-star" style="font-size:12px;color: #ffb503"></i>
+						{% endif %}
+					</span>
+				
+				</span>
+			
+				</div>
 			</figcaption>
 		</div>
 	</div> <!-- col.// -->
